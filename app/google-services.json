@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "439992340018",
+    "firebase_url": "https://hachimichi-e4e88.firebaseio.com",
+    "project_id": "hachimichi-e4e88",
+    "storage_bucket": "hachimichi-e4e88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439992340018:android:423f1749fc9e1c1ef8362b",
+        "android_client_info": {
+          "package_name": "com.weaponoid.hachimichi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439992340018-k7rbljntt2qr4cvlfiloku2e1l4m01t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx9CVNl9A4AlHTuqCz0XABr9CLJX5Aky0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439992340018-k7rbljntt2qr4cvlfiloku2e1l4m01t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

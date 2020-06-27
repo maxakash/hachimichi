@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/images">
+
+    <fragment
+        android:id="@+id/images"
+        android:name="com.weaponoid.hachimichi.views.Images"
+        android:label="images_fragment"
+        tools:layout="@layout/images_fragment" />
+    <fragment
+        android:id="@+id/sensors"
+        android:name="com.weaponoid.hachimichi.views.Sensors"
+        android:label="sensors_fragment"
+        tools:layout="@layout/sensors_fragment" >
+        <action
+            android:id="@+id/sensorToData"
+            app:destination="@id/sensorData" />
+    </fragment>
+    <dialog
+        android:id="@+id/sensorData"
+        android:name="com.weaponoid.hachimichi.views.SensorData"
+        android:label="sensor_data_fragment"
+        tools:layout="@layout/sensor_data_fragment" >
+        <argument
+            android:name="sensorType"
+            app:argType="string" />
+    </dialog>
+</navigation>

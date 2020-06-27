@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:elevation="4dp"
+    android:id="@+id/sensor"
+    app:cardCornerRadius="8.0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sensor_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sensor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sensor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Pedometer"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sensor_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor: Qualcomm"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/sensor_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type: Step Detector"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/sensor_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power: 0.015mA"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
