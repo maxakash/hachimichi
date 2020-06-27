@@ -27,7 +27,9 @@ class SensorDataViewModel : ViewModel(), SensorEventListener {
 
     override fun onSensorChanged(event: SensorEvent?) {
         if (event != null && event.values.isNotEmpty()) {
-
+            
+            try {
+                
             when (type) {
 
                 35, 4, 16, 17, 9, 10, 15, 22, 27, 1, 2, 20, 30 -> {
@@ -48,6 +50,9 @@ class SensorDataViewModel : ViewModel(), SensorEventListener {
                         "${event.values[0]} "
                 }
 
+            }
+                }catch (e:Exception){
+                println(e.message)
             }
 
         }
